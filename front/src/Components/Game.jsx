@@ -1,20 +1,23 @@
 import React, { Component } from 'react';
 import Phaser from 'phaser';
-import LevelHome from '../GameEngine/LevelHome'
+import LevelHome from '../GameEngine/LevelHome';
+import '../Css/Canvas.css';
 
 class Game extends Component {
 	constructor(props) {
 		super(props);
 		this.phaserContainer = React.createRef();
-  }
+	}
+
   
 	// Configuration de la game
 
 	componentDidMount() {
+
 		let config = {
 			type: Phaser.AUTO,
-			width: 800,
-			height: 600,
+			width: 1000,
+			height: 500,
 			physics: {
 				default: 'arcade',
 				arcade: {
@@ -28,14 +31,11 @@ class Game extends Component {
 			parent: this.phaserContainer,
 		};
 		new Phaser.Game(config);
+
 	}
 
 	render() {
-		return (
-			<div>
-				<div ref={this.phaserContainer} />
-			</div>
-		);
+		return <div ref={this.phaserContainer} />;
 	}
 }
 

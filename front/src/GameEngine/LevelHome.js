@@ -11,7 +11,9 @@ export default class LevelHome extends Scene {
 
 	preload() {}
 
-	create() {}
+	create() {
+		
+	}
 
 	update() {}
 		

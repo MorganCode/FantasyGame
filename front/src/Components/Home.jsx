@@ -23,7 +23,7 @@ const styles = theme => ({
 	card: {
 		display: 'flex',
 		flexDirection: 'column',
-		justifyContent: 'center !important',
+		
 		alignItems: 'center !important',
 		maxWidth: 300,
 	},
